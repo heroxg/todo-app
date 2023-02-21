@@ -1,0 +1,63 @@
+.completed {
+    text-decoration: line-through;
+}
+.todo-list ul {
+    padding-left: 0;
+    margin-top: 30px;
+}
+.todo-list ul li {
+    background: #f5eede;
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-wrap: anywhere;
+}
+.todo-list ul li:nth-child(even) {
+    background-color: #f3f3f3;
+}
+.todo_title{
+    flex: 10;
+}
+.todo__actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.action__icon svg {
+    vertical-align: unset;
+}
+.todo__actions .form-check-input {
+    vertical-align: unset;
+    margin-top: unset;
+}
+.todo__actions .form-check-input:focus {
+    border-color: #f7f7f4;
+    box-shadow: 0 0 0 0.25rem rgb(138 147 161 / 25%) !important;
+}
+
+.todo__actions .form-check-input:checked {
+    background-color: #45bb1f;
+    border-color: #45bb1f;
+}
+.edit {
+    color: #8f912f;
+    cursor: pointer;
+}
+.delete{
+    color: #d14e4e;
+    cursor: pointer;
+}
+.controls .btn {
+    background: #3d916a;
+    border: 0;
+    text-transform: capitalize;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.controls .btn:first-child:active {
+    background-color: #3ba519;
+}
