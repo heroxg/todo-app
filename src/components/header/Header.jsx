@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className='header'>
       <h1>Welcome! It's another beautiful day!!</h1>
-      <p>Set your goals on the basis of priorities and acommplish them one at a time</p>
+      <p>Set your goals on the basis of priorities and accomplish them one at a time</p>
        <p className='date'>Date: {date}</p>
     </div>
   )
