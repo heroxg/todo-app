@@ -30,7 +30,7 @@ console.log(todoName);
                         />
                     </Form.Group>
                     <div className='controls'>
-                         <Button variant="primary" type="submit" onClick={(e) => dispatch(saveEdit({id: id, name: todoName}))}>
+                         <Button variant="primary" type="submit" onClick={(e) => {todoName !=="" && dispatch(saveEdit({id: id, name: todoName}))}}>
                            save edit
                         </Button>
                     </div></>
