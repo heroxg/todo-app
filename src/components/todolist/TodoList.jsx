@@ -12,9 +12,6 @@ const todos = useSelector((state) => state.tasks);
 const dispatch = useDispatch();
 const [todoName, setTodoName] = useState("");
 
-
-console.log(todoName);
-
   return (  
     <div className="todo-list">
         <ul>
