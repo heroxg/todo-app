@@ -32,7 +32,7 @@ const [todoName, setTodoName] = useState("");
                         </Button>
                     </div></>
                     : 
-                    <li key={id} style={{textDecoration: isCompleted === true ? "line-through" : "none", backgroundColor: isCompleted === true ? "#c6e5bc" : "#f5eede"}}>
+                    <li key={id} data-testid="todo-item" style={{textDecoration: isCompleted === true ? "line-through" : "none", backgroundColor: isCompleted === true ? "#c6e5bc" : "#f5eede"}}>
                         <span className='todo_title'>{name}</span> 
                         <div className='todo__actions'>
                             <Form.Check  onChange={(e) => dispatch(toggleComplete(id))}
