@@ -3,7 +3,11 @@ import './Header.css'
 
 const Header = () => {
     const currentDate = new Date();
-    const date = `${currentDate.getDate()}/${currentDate.getMonth()+1}/${currentDate.getFullYear()}`;
+    const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+    const months = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+    const month = months[currentDate.getMonth()];
+    const day = days[currentDate.getDay()];
+    const date = `${day}, ${month} ${currentDate.getDate()}, ${currentDate.getFullYear()}`;
   return (
     <div className='header'>
       <h1>Welcome! It's another beautiful day!!</h1>
